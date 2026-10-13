@@ -1,0 +1,22 @@
+predictive_pilot:
+  bases: [encot, neuromax]
+  final_base_count: 1
+  maximum_profiles_per_base: 2
+  profiles: [published_default, recovered_historical_if_available]
+  maximum_base_fits: 8
+  exact_native_replay_required: true
+  affine_interface_required_for_range_lp: true
+baseline_suite: [lda, nmf, gsdmm, bertopic, combinedtm, neuromax, fastopic, glocom, encot]
+baseline_selection:
+  include_published_default: true
+  maximum_profiles_per_model: 2
+  no_invented_historical_profile: true
+  keep_distinct_predictive_selected_rows: true
+  descriptor_rule: development_npmi_then_cv_then_configuration_index
+  predictive_rule: development_macro_source_nll
+  select_all_before_any_primary_test: true
+assets:
+  document_encoder_candidate: BAAI/bge-small-zh-v1.5
+  encoder_revision: resolve_and_lock_before_step02_scoring
+  download_large_models_in_step01: false
+  missing_predictive_interface: nll_unavailable

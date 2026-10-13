@@ -1,0 +1,33 @@
+panel: [lda, nmf, gsdmm, bertopic]
+selection_rule: one_profile_per_model_selected_by_equal_fold_seed_mean_npmi_then_cv_then_profile_index
+maximum_profiles_per_model: 2
+profiles:
+  lda:
+    - {name: library_default_k10, alpha: symmetric, eta: null, passes: 1, iterations: 50}
+  nmf:
+    - {name: sklearn_default_tfidf_k10, input: tfidf, init: nndsvda, solver: cd, beta_loss: frobenius, max_iter: 200, tol: 0.0001}
+  gsdmm:
+    - {name: reference_default_k10, alpha: 0.1, beta: 0.1, iterations: 30, input: unique_word_sets}
+  bertopic:
+    - {name: library_default_hdbscan_common_k10, neighbors: 15, components: 5, min_dist: 0.0, metric: cosine, cluster: hdbscan, min_cluster_size: 10, ctfidf_bm25: false, reduce_frequent_words: false}
+    - {name: k10_default_neighbors15, neighbors: 15, components: 5, min_dist: 0.0, metric: cosine, cluster: kmeans, n_init: 10, ctfidf_bm25: false, reduce_frequent_words: false}
+encoder:
+  repository: BAAI/bge-small-zh-v1.5
+  revision: 7999e1d3359715c523056ef9478215996d62a620
+  weights: model.safetensors
+  weights_sha256: 354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026
+  file_sha256:
+    config.json: 3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a
+    model.safetensors: 354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026
+    vocab.txt: 45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c
+    tokenizer_config.json: e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a
+    special_tokens_map.json: b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3
+  pooling: cls
+  normalize: true
+  max_length: 512
+  batch_size: 32
+  instruction: none
+  endpoints: [https://huggingface.co, https://hf-mirror.com]
+  local_directory: data/assets/bge-small-zh-v1.5
+  embeddings_scope: outer_fit_groups_only
+  no_silent_encoder_substitution: true

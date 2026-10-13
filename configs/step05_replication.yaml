@@ -1,0 +1,47 @@
+protocol: STEP05_FROZEN_FIVE_SEED_REPLICATION_R1_20261010
+scope: development_replication_and_mechanism_ablation
+source_protocol: STEP04_FROZEN_PROPOSED_COMPETITOR_PILOT_R1_20261010
+seeds: [809, 810, 811, 812, 813]
+reuse_seeds: [809, 810]
+new_seeds: [811, 812, 813]
+proposed_base: neuromax
+proposed_profile: random_words
+canonical_projection: primary_minimum_tv
+moment_correction: false
+fit_encoder: false
+primary_profiles:
+  BERTopic: k10_default_neighbors15
+  CombinedTM: bounded_prodlda_200
+  EnCOT: chinese_words
+  FASTopic: bounded_400
+  GSDMM: reference_default_k10
+  GloCOM: author_cli_global50
+  LDA: fitting_strong_k10
+  NMF: fitting_strong_k10
+  NeuroMax: random_words
+descriptor_challengers:
+  BERTopic: [library_default_hdbscan_common_k10]
+  GSDMM: [bounded_low_beta_k10]
+maximum_new_baseline_fits: 33
+parent_replication_first: true
+stop_before_other_baselines_if_parent_gate_fails: true
+proposed_shares_native_parent_fit: true
+all_historical_profiles_retained: true
+reselect_profiles_after_replication: false
+acceptance:
+  minimum_mean_native_nll_gain: 0.001
+  require_mean_descriptor_gain_over_native: true
+  require_all_available_profile_means_win_or_tie: true
+  require_complete_ablation_grid: true
+new_acquisition_ablations: [without_subsample_stability, positive_only_association]
+retained_controls: [native, proposed, pair_acquisition, moment_control, no_backoff, index_control, range_control, l2_control, display_only]
+bootstrap:
+  resamples: 10000
+  seed: 5809
+  resample_training_seeds: true
+  resample_independent_groups_within_source: true
+  same_group_draws_across_training_seeds: true
+  scope: exploratory_development_after_protocol_selection
+test_evaluation: false
+external_evaluation: false
+final_paper_results: false

@@ -1,0 +1,8 @@
+variants:
+  - without_subsample_stability
+  - positive_only_core_selection
+  - original_index_secondary
+  - without_moments_and_backoff
+remove_inactive_variants: true
+paired_seeds_and_subsamples: true
+expected_identical_descriptors: [original_index_secondary, without_moments_and_backoff, same_core_display_only, same_core_l2]

@@ -1,0 +1,5 @@
+# Only the existing numerical and plotting packages are needed for this export.
+# No PyTorch, CUDA, scikit-learn or model installation is performed.
+numpy==1.26.4
+matplotlib==3.9.2
+

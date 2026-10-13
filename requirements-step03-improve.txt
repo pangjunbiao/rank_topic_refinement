@@ -1,0 +1,4 @@
+# One install command covers every numerical pin needed by saved-model R3.
+# CUDA PyTorch and the existing encoder installations are not replaced.
+-r requirements-step02.txt
+osqp==1.0.4

@@ -1,0 +1,50 @@
+protocol: STEP04_FROZEN_PROPOSED_COMPETITOR_PILOT_R1_20261010
+scope: bounded_development_competitor_pilot
+source_protocol: STEP03_FULLSET_R3_20261009
+topics: 10
+topn: 10
+seeds: [809, 810]
+methods: [gsdmm, bertopic, combinedtm, fastopic, glocom]
+maximum_new_fits: 20
+freeze_proposed: true
+retrain_proposed: false
+fit_encoder: false
+encoder: same_pinned_step03_chinese_encoder
+checkpoint_every_epochs: 25
+prediction:
+  shared_backoff_grid: [0.0, 0.01, 0.05, 0.1, 0.2]
+  unigram_pseudocount: 0.5
+  combinedtm_posterior_samples: 20
+  bertopic_native_likelihood: unavailable
+  target_view: accepted_development_completion_targets
+selection:
+  fixed_k_profiles: mean_development_nll_then_fitting_npmi_then_profile_name
+  nonpredictive_profiles: mean_fitting_npmi_then_cv_then_profile_name
+  retain_every_profile: true
+  bootstrap_resamples: 10000
+  bootstrap_seed: 4809
+  bootstrap_scope: exploratory_post_selection_group_paired
+profiles:
+  gsdmm:
+    - {name: reference_default_k10, alpha: 0.1, beta: 0.1, iterations: 30, input: unique_word_sets}
+    - {name: bounded_low_beta_k10, alpha: 0.1, beta: 0.01, iterations: 100, input: unique_word_sets}
+  bertopic:
+    - {name: k10_default_neighbors15, neighbors: 15, components: 5, min_dist: 0.0, metric: cosine, cluster: kmeans, n_init: 10, ctfidf_bm25: false, reduce_frequent_words: false}
+    - {name: library_default_hdbscan_common_k10, neighbors: 15, components: 5, min_dist: 0.0, metric: cosine, cluster: hdbscan, min_cluster_size: 10, ctfidf_bm25: false, reduce_frequent_words: false}
+  combinedtm:
+    - {name: author_default_prodlda_100, epochs: 100, batch_size: 64, learning_rate: 0.002, momentum: 0.99, hidden_sizes: [100, 100], activation: softplus, dropout: 0.2, learn_priors: true, model_type: prodLDA}
+    - {name: bounded_prodlda_200, epochs: 200, batch_size: 64, learning_rate: 0.002, momentum: 0.99, hidden_sizes: [100, 100], activation: softplus, dropout: 0.2, learn_priors: true, model_type: prodLDA}
+  fastopic:
+    - {name: author_default_200, epochs: 200, batch_size: full, learning_rate: 0.002, theta_temp: 1.0, DT_alpha: 3.0, TW_alpha: 2.0}
+    - {name: bounded_400, epochs: 400, batch_size: full, learning_rate: 0.002, theta_temp: 1.0, DT_alpha: 3.0, TW_alpha: 2.0}
+  glocom:
+    - {name: author_cli_global40, epochs: 200, batch_size: 200, learning_rate: 0.002, clusters: 40, n_init: 10, en_units: 200, dropout: 0.0, beta_temp: 0.2, aug_coef: 0.5, prior_var: 0.1, weight_loss_ECR: 60.0, sinkhorn_alpha: 20.0, sinkhorn_max_iter: 100, word_initialization: pinned_chinese_embeddings}
+    - {name: author_cli_global50, epochs: 200, batch_size: 200, learning_rate: 0.002, clusters: 50, n_init: 10, en_units: 200, dropout: 0.0, beta_temp: 0.2, aug_coef: 0.5, prior_var: 0.1, weight_loss_ECR: 60.0, sinkhorn_alpha: 20.0, sinkhorn_max_iter: 100, word_initialization: pinned_chinese_embeddings}
+native_variable_topic_counts: supplementary_only_no_padding
+shared_vocabulary: accepted_primary_fit_vocabulary
+shared_metric_reference: accepted_primary_fitting_groups
+cv_window: 110
+npmi_window: 10
+test_evaluation: false
+external_evaluation: false
+final_paper_results: false

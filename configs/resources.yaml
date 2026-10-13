@@ -1,0 +1,9 @@
+device_default: auto
+step01_lexical_preparation_device: cpu
+future_embedding_and_neural_device: selected_gpu_if_available
+lp_device: cpu
+new_secondary_max_seconds_including_assembly: 900
+new_secondary_max_ram_gib: 8
+new_secondary_max_physical_ram_fraction: 0.5
+additional_margin_sweep_max_seconds: 7200
+phase_heartbeat_seconds: 30

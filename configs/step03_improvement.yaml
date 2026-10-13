@@ -1,0 +1,56 @@
+protocol: STEP03_FULLSET_R3_20261009
+source_protocol: STEP03_COMPLETION_R2_20261009
+scope: exploratory_saved_model_pilot
+base: neuromax
+profile: random_words
+seeds: [809, 810]
+moment_correction: false
+canonical_projection: primary_minimum_tv
+acquisition:
+  neighborhood: 50
+  word_group_support: 20
+  pair_group_support: 5
+  positive_pair_threshold: 0.1
+  minimum_positive_connections: 2
+  minimum_final_positive_connections: 1
+  minimum_stable_complete_set_gain: 0.02
+  minimum_full_complete_set_gain: 0.0
+  maximum_replacements: 4
+  retained_native_words_minimum: 6
+  beam_width: 12
+  retain_native_word_exclusion_alternatives: true
+  required_unique_words: 100
+  allocation_seconds: 20.0
+  allocation_nodes: 10000
+projection:
+  rank_margin_scaled: 0.000001
+  primary_seconds: 180.0
+  max_relative_l1_movement: 0.05
+controls:
+  moment_restoration: true
+  no_backoff: true
+  display_only: true
+  previous_pair_acquisition: true
+  index_secondary: true
+  range_secondary: true
+  l2: true
+  secondary_seconds: 180.0
+  range_maximum_iterations: 50
+  range_tolerance: 0.00000001
+  tv_cap_slack_scaled: 0.00001
+  l2_seconds: 60.0
+  l2_epsilon: 0.00000001
+acceptance:
+  both_seeds_required: true
+  fitting_cv_and_npmi_improve_over_native_and_r2: true
+  actual_readout_diversity_required: 1.0
+  both_seeds_native_nll_improve: true
+  mean_native_nll_gain_minimum: 0.001
+  mean_nll_no_worse_than_r2: true
+  all_baseline_profiles_retained: true
+  compare_descriptor_best_profiles: true
+  full_final_experiment_allowed: false
+new_neural_fits: 0
+new_classical_fits: 0
+new_encoder_calls: 0
+test_or_external_used: false

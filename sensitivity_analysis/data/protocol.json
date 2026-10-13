@@ -1,0 +1,384 @@
+{
+  "protocol": "PRIMARY_POST_EXPOSURE_SENSITIVITY_V1",
+  "seeds": [
+    809,
+    810,
+    811,
+    812,
+    813
+  ],
+  "support_values": [
+    3,
+    5,
+    10
+  ],
+  "margin_values": [
+    1e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001
+  ],
+  "selected_support": 5,
+  "selected_margin": 1e-06,
+  "projection_objectives": [
+    "primary",
+    "range"
+  ],
+  "rank_acquisition": "frozen_selected_targets_per_seed",
+  "backoff_rho": 0.0,
+  "moment_correction": false,
+  "data_scope": "fitting_acquisition_and_development_completion_only",
+  "post_test_exposure": true,
+  "change_final_recipe": false,
+  "canonical": "data/processed/primary/222f122b5568774138ea",
+  "seed_sources": [
+    {
+      "seed": 809,
+      "evidence_folder": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809",
+      "arrays_folder": "outputs/steps/step03_saved_replay/efa4daf2271b73d1b236/cases/neuromax/random_words/seed809",
+      "selected_case_folder": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed809"
+    },
+    {
+      "seed": 810,
+      "evidence_folder": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810",
+      "arrays_folder": "outputs/steps/step03_saved_replay/efa4daf2271b73d1b236/cases/neuromax/random_words/seed810",
+      "selected_case_folder": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed810"
+    },
+    {
+      "seed": 811,
+      "evidence_folder": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811",
+      "arrays_folder": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811",
+      "selected_case_folder": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed811"
+    },
+    {
+      "seed": 812,
+      "evidence_folder": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812",
+      "arrays_folder": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812",
+      "selected_case_folder": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed812"
+    },
+    {
+      "seed": 813,
+      "evidence_folder": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813",
+      "arrays_folder": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813",
+      "selected_case_folder": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed813"
+    }
+  ],
+  "input_files": [
+    {
+      "source_path": "data/processed/primary/222f122b5568774138ea/feature_records.jsonl",
+      "packed_path": "sensitivity_analysis/inputs/data/processed/primary/222f122b5568774138ea/feature_records.jsonl",
+      "sha256": "27639d46206bbb7941ceda18ff8c7317c4d56cf20fdb3ebba5083148834ea650",
+      "bytes": 1514792
+    },
+    {
+      "source_path": "data/processed/primary/222f122b5568774138ea/completion_masks.jsonl",
+      "packed_path": "sensitivity_analysis/inputs/data/processed/primary/222f122b5568774138ea/completion_masks.jsonl",
+      "sha256": "7adea7baac450e895d47c0baa6fdd8b01459f0266b2d8c0bf30bd1679b59bfcf",
+      "bytes": 726573
+    },
+    {
+      "source_path": "data/processed/primary/222f122b5568774138ea/vocabulary.json",
+      "packed_path": "sensitivity_analysis/inputs/data/processed/primary/222f122b5568774138ea/vocabulary.json",
+      "sha256": "8138cd406321743382451880fd805e5009f0c7058a651234d893fad8bf535cbd",
+      "bytes": 71567
+    },
+    {
+      "source_path": "data/processed/primary/222f122b5568774138ea/model_fit_group_ids.json",
+      "packed_path": "sensitivity_analysis/inputs/data/processed/primary/222f122b5568774138ea/model_fit_group_ids.json",
+      "sha256": "10cc5528fb0f4b5c03e82baca248ab7b9d63ce46fb15fb2d89e15040b932ded3",
+      "bytes": 45955
+    },
+    {
+      "source_path": "data/processed/primary/222f122b5568774138ea/completion_group_ids_by_split.json",
+      "packed_path": "sensitivity_analysis/inputs/data/processed/primary/222f122b5568774138ea/completion_group_ids_by_split.json",
+      "sha256": "1d087a88cb4e4560bcaa756735b371111511c411ded4aa9fe00955f955ba2cd1",
+      "bytes": 69587
+    },
+    {
+      "source_path": "configs/step03_improvement.yaml",
+      "packed_path": "sensitivity_analysis/inputs/configs/step03_improvement.yaml",
+      "sha256": "d81598437674122cb9a29388c26674aa7b148d1aea2018adc85ad54764b6c614",
+      "bytes": 1607
+    },
+    {
+      "source_path": "configs/step03_neural.yaml",
+      "packed_path": "sensitivity_analysis/inputs/configs/step03_neural.yaml",
+      "sha256": "e9be69322ab20f68dfd1efb29b1c8288b767643998ab3514fd579e6fbda524d3",
+      "bytes": 1678
+    },
+    {
+      "source_path": "configs/step05_recovery.yaml",
+      "packed_path": "sensitivity_analysis/inputs/configs/step05_recovery.yaml",
+      "sha256": "880c8247080ed45611f407411a1b712c4f2e1baef4cc3a6afeee25b5334f6b61",
+      "bytes": 1206
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/association_evidence.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/association_evidence.npz",
+      "sha256": "bb97f5b3505c9f746b199b4d960879e6e4042be739a480ad60ea1f00e80239f0",
+      "bytes": 213612
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/association_words.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/association_words.json",
+      "sha256": "066d710e95727d92dfd8b4436ffe72a35e78ca06eb2e7086ff3ec8f742b1e2c3",
+      "bytes": 2468
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/sampling_group_ids.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/sampling_group_ids.json",
+      "sha256": "c0b0d2e6226669987e58cd19bc10a268d22ceb47d43b0e8ca00bbb7035e5641a",
+      "bytes": 487723
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/range_contexts.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed809/range_contexts.json",
+      "sha256": "f2f98c366b2b285caa90b78e586b1772cece730c2ff182e5f81071fc4483c85d",
+      "bytes": 2257
+    },
+    {
+      "source_path": "outputs/steps/step03_saved_replay/efa4daf2271b73d1b236/cases/neuromax/random_words/seed809/readouts_and_latents.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_saved_replay/efa4daf2271b73d1b236/cases/neuromax/random_words/seed809/readouts_and_latents.npz",
+      "sha256": "402d38c3b85f707dfce1e46928c329d82d862ec0462276aceddd60cfbb15c36a",
+      "bytes": 396741
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed809/case_result.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed809/case_result.json",
+      "sha256": "d9276f5c4516e3e6283ad608d8569de6aa274b48b268c39694f400778486fd83",
+      "bytes": 283839
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed809/readouts.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed809/readouts.npz",
+      "sha256": "3c1151f576d6e0067c9507a91c2f8417373b1bf078931e15b185a6d61aaf65d7",
+      "bytes": 118830
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/association_evidence.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/association_evidence.npz",
+      "sha256": "21cb6a714615b1de0106619b4e86868212df0c35e22ffcf256572730e4ad9006",
+      "bytes": 232299
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/association_words.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/association_words.json",
+      "sha256": "f65f21604d3bbb0d8387e3906f6cb43c657a552587d3804b19e8b2dd7cecfc8a",
+      "bytes": 2515
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/sampling_group_ids.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/sampling_group_ids.json",
+      "sha256": "367569abfc2635287dc87fa2d73aa5b2010ecdc8429a1733be3fb84f5ee33f1d",
+      "bytes": 487723
+    },
+    {
+      "source_path": "outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/range_contexts.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_neural_pilot/e013b6b7fd8191bea142/cases/neuromax/random_words/seed810/range_contexts.json",
+      "sha256": "f2f98c366b2b285caa90b78e586b1772cece730c2ff182e5f81071fc4483c85d",
+      "bytes": 2257
+    },
+    {
+      "source_path": "outputs/steps/step03_saved_replay/efa4daf2271b73d1b236/cases/neuromax/random_words/seed810/readouts_and_latents.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step03_saved_replay/efa4daf2271b73d1b236/cases/neuromax/random_words/seed810/readouts_and_latents.npz",
+      "sha256": "ef32368e4677a381f3eb1f2fed1c2025fb242e62f3f4c6018822165e02d14ed3",
+      "bytes": 398224
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed810/case_result.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed810/case_result.json",
+      "sha256": "6a258421890fc9c56d624c66256e04fd942a3cb6b00937648db8433320958f5e",
+      "bytes": 326669
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed810/readouts.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed810/readouts.npz",
+      "sha256": "770c61dbaa42af2d9abc485af2a702024a99ea575e83f7bd4c3f456ae4f47676",
+      "bytes": 118129
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/association_evidence.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/association_evidence.npz",
+      "sha256": "01bfd6e5c7cce5db37c4755033e0c1e5c7c9e078be6a2903c3f824edfca9ed0c",
+      "bytes": 201177
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/association_words.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/association_words.json",
+      "sha256": "f1945624760ebd51fa1fa03f9d158a4885ae92cef3a0eb8ea27b99641d51650a",
+      "bytes": 2445
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/sampling_group_ids.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/sampling_group_ids.json",
+      "sha256": "628b1a85fcc68cd13964f0f5ad156ded66c7c818eed0cfb0a09d98728fe10200",
+      "bytes": 487723
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/range_contexts.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/range_contexts.json",
+      "sha256": "7ad6a90bc3ed24e66407234a2f44c4f55a1f0cf6146f30b23ac7ed8f6f270067",
+      "bytes": 2200
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/readouts_and_latents.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed811/readouts_and_latents.npz",
+      "sha256": "2a730552f342deb0ba1aca22a3db8e6aa2410d45d19d1c001e05823bb623a89d",
+      "bytes": 209279
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed811/case_result.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed811/case_result.json",
+      "sha256": "a21a642ad05c37a6841b1c9f3ed8bfa048591784fbc4b4fe4e6f68138a80a6bc",
+      "bytes": 252408
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed811/readouts.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed811/readouts.npz",
+      "sha256": "bc05e5df82e950cb10e91250d6728a0df6ef39c257d29130fafd27bd1373f4da",
+      "bytes": 118576
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/association_evidence.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/association_evidence.npz",
+      "sha256": "06546590a78421c5bd67719555fc5cb080fcd8066da2c42263aedc647440f05a",
+      "bytes": 209814
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/association_words.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/association_words.json",
+      "sha256": "643667697d15b9b3f9865f1061fe46164abe6ca4d533351c6f7786b118550384",
+      "bytes": 2439
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/sampling_group_ids.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/sampling_group_ids.json",
+      "sha256": "cc0ff426966be97c28a210d2386649720039f423b164d8463927dad3d296357f",
+      "bytes": 487723
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/range_contexts.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/range_contexts.json",
+      "sha256": "7ad6a90bc3ed24e66407234a2f44c4f55a1f0cf6146f30b23ac7ed8f6f270067",
+      "bytes": 2200
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/readouts_and_latents.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed812/readouts_and_latents.npz",
+      "sha256": "69ad55a3072f41999c98733e4784b7f3ab54ed34dcd992cc4712811ce398351b",
+      "bytes": 209760
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed812/case_result.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed812/case_result.json",
+      "sha256": "dd1bc7d1661563675b125992856b0002ee9946e133a8dcd9b11c99d1464aecc2",
+      "bytes": 231452
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed812/readouts.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed812/readouts.npz",
+      "sha256": "381328331b590bc2177937596f4e665b47769a16571f5b6f2eda084d14f6e777",
+      "bytes": 119012
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/association_evidence.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/association_evidence.npz",
+      "sha256": "e1bbe371e1d2dd39e01d5ca45e8814562bd69656f1f1335a4b78b77e26c4ffa9",
+      "bytes": 206924
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/association_words.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/association_words.json",
+      "sha256": "b0bcdec0075c8c09421a6b9a0bf23bc70e14dcc429932862aa07948ae9d2e218",
+      "bytes": 2462
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/sampling_group_ids.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/sampling_group_ids.json",
+      "sha256": "50fbed9ef58ece3546c5ffdcbf57e67eb393a802a16b5f4bfd34dfb384c4fbfe",
+      "bytes": 487723
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/range_contexts.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/range_contexts.json",
+      "sha256": "7ad6a90bc3ed24e66407234a2f44c4f55a1f0cf6146f30b23ac7ed8f6f270067",
+      "bytes": 2200
+    },
+    {
+      "source_path": "outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/readouts_and_latents.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_replication/da930e376b65483e2886/refinement_sources/cases/neuromax/random_words/seed813/readouts_and_latents.npz",
+      "sha256": "9ec82b1090e13998f3228148d94875520b03ad012edb099ba13e8e5413d5784e",
+      "bytes": 209555
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed813/case_result.json",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed813/case_result.json",
+      "sha256": "47d0c4a6faff0d2077690ccee13f54a1375254f60aa332e02e039d2de3882e90",
+      "bytes": 314261
+    },
+    {
+      "source_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed813/readouts.npz",
+      "packed_path": "sensitivity_analysis/inputs/outputs/steps/step05_recovery/c6ada4213ad518e51665/candidate_cases/signed_stable/seed813/readouts.npz",
+      "sha256": "892b916da94bc6ea766fa325f47ffbf7851e1a1c0992a9b7c79f2ce4444ac78b",
+      "bytes": 118990
+    }
+  ],
+  "vendor_source_files": [
+    {
+      "source_path": "src/rank_refinement/acquisition/complete_targets.py",
+      "vendored_path": "sensitivity_analysis/vendor/acquisition/complete_targets.py",
+      "sha256": "d2d792252ca4d2c2b4a15a255e65534278ffb7d28a503d38276f3bc7e11a26b7"
+    },
+    {
+      "source_path": "src/rank_refinement/acquisition/native_targets.py",
+      "vendored_path": "sensitivity_analysis/vendor/acquisition/native_targets.py",
+      "sha256": "7ad28634d754b08fe26f3f055227f36373e06968457689fcd4418e13e039fbcf"
+    },
+    {
+      "source_path": "src/rank_refinement/acquisition/native_diversity_targets.py",
+      "vendored_path": "sensitivity_analysis/vendor/acquisition/native_diversity_targets.py",
+      "sha256": "2fd7e63f9e33a9bf6b37f70b1cb58d5a43fade9e3f958c6c8ea55aadf4fc30ab"
+    },
+    {
+      "source_path": "src/rank_refinement/acquisition/windows.py",
+      "vendored_path": "sensitivity_analysis/vendor/acquisition/windows.py",
+      "sha256": "1c4a5ff430987c53251e594a8edad9d480e7f887b1109c2cfc27295e7ec05def"
+    },
+    {
+      "source_path": "src/rank_refinement/acquisition/associations.py",
+      "vendored_path": "sensitivity_analysis/vendor/acquisition/associations.py",
+      "sha256": "f2298d4e46439d1d7bdc7d2bcde2ab26f22a2b0bf2a427227162a611629a3103"
+    },
+    {
+      "source_path": "src/rank_refinement/acquisition/subsampling.py",
+      "vendored_path": "sensitivity_analysis/vendor/acquisition/subsampling.py",
+      "sha256": "54b622cd011243d02fff091f55217bf1b7be565724e4d46b21b521c2d61d8d3c"
+    },
+    {
+      "source_path": "src/rank_refinement/projection/replay_solver.py",
+      "vendored_path": "sensitivity_analysis/vendor/projection/replay_solver.py",
+      "sha256": "71e16113069f280f8f7e0508f72eb450edb016e60262bff47bb70bb365e69243"
+    },
+    {
+      "source_path": "src/rank_refinement/projection/minimum_tv.py",
+      "vendored_path": "sensitivity_analysis/vendor/projection/minimum_tv.py",
+      "sha256": "3c538e9aa8b1d163efe86c8b61304a5daf238d5e78a14e95252ffc738782b138"
+    },
+    {
+      "source_path": "src/rank_refinement/models/neural_prediction.py",
+      "vendored_path": "sensitivity_analysis/vendor/models/neural_prediction.py",
+      "sha256": "bc1de6c6bce5610cc55368ec2b480185c2b8052524c747d272f47bbb4d3a69c4"
+    },
+    {
+      "source_path": "src/rank_refinement/evaluation/likelihood.py",
+      "vendored_path": "sensitivity_analysis/vendor/evaluation/likelihood.py",
+      "sha256": "07602d53ca53f79f43f61e8de73b74a565fcb979bbcaa1a2d823aa2cf9e9f1a9"
+    },
+    {
+      "source_path": "src/rank_refinement/runtime/seeds.py",
+      "vendored_path": "sensitivity_analysis/vendor/runtime/seeds.py",
+      "sha256": "f344312817d910f13643453341e56de3ac94e4f34c9e569f54663c6463d524e2"
+    }
+  ]
+}

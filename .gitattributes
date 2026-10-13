@@ -1,0 +1,3 @@
+# Preserve source bytes on checkout: frozen protocols hash these files.
+# Do not enable automatic CRLF/LF conversion for the archived implementation.
+* -text

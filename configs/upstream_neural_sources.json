@@ -1,0 +1,58 @@
+[
+  {
+    "base": "encot",
+    "repository": "manhdo249/EnCOT",
+    "commit": "8ac3592165cc7851676be2776b314eb6e44e9388",
+    "path": "topmost/models/NewMethod/NewMethod.py",
+    "sha256": "11fc37784add0634083cd6e96753d7e10814336972cff14d22fd9c9ad4121d2a",
+    "bytes": 8735
+  },
+  {
+    "base": "encot",
+    "repository": "manhdo249/EnCOT",
+    "commit": "8ac3592165cc7851676be2776b314eb6e44e9388",
+    "path": "topmost/models/NewMethod/ECR.py",
+    "sha256": "ba53afbb7aef54c976cf28fca9d321a0b275eb26e99881cc4e0d7ac5a0efa438",
+    "bytes": 1568
+  },
+  {
+    "base": "encot",
+    "repository": "manhdo249/EnCOT",
+    "commit": "8ac3592165cc7851676be2776b314eb6e44e9388",
+    "path": "topmost/models/NewMethod/_ETP.py",
+    "sha256": "77add3c26deacbf8fe252ea331c583e80dfdd137faa9cdb8fc5c22d7051f65f6",
+    "bytes": 1800
+  },
+  {
+    "base": "encot",
+    "repository": "manhdo249/EnCOT",
+    "commit": "8ac3592165cc7851676be2776b314eb6e44e9388",
+    "path": "topmost/models/NewMethod/_model_utils.py",
+    "sha256": "dafd02ddbc657f030ee2dbbf037063e8b4af8139e6c4bc1945c947583cdee75e",
+    "bytes": 177
+  },
+  {
+    "base": "neuromax",
+    "repository": "Fsoft-AIC/NeuroMax",
+    "commit": "98a53b6ac91de2fc605c9dfd31931167faa18171",
+    "path": "NeuroMax/NeuroMax.py",
+    "sha256": "13fde5b004d360cc32e3e6f502b72c5c2291784fb34d7dba5a9323e70c7b43b5",
+    "bytes": 8471
+  },
+  {
+    "base": "neuromax",
+    "repository": "Fsoft-AIC/NeuroMax",
+    "commit": "98a53b6ac91de2fc605c9dfd31931167faa18171",
+    "path": "NeuroMax/ECR.py",
+    "sha256": "01803a1750e941c300906a7e094a99afb58124402a11a54facebe556c6af554e",
+    "bytes": 1503
+  },
+  {
+    "base": "neuromax",
+    "repository": "Fsoft-AIC/NeuroMax",
+    "commit": "98a53b6ac91de2fc605c9dfd31931167faa18171",
+    "path": "NeuroMax/GR.py",
+    "sha256": "1f70c5b1c72e891227f0d137948d8af7c8e33ef624de1f8847a71f150fe20caf",
+    "bytes": 1754
+  }
+]

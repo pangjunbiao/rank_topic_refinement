@@ -1,0 +1,179 @@
+{
+  "scope": "reviewed_primary_only_saved_run_reproduction",
+  "compact_prefix": "outputs/steps/step08_compact/171540c39f00cafba837",
+  "primary_prefix": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709",
+  "preparation_prefix": "data/processed/primary/222f122b5568774138ea",
+  "primary_freeze_id": "88b9b4de3e1f7d877709c0d104f377b26507093b0849fdbfb10d09f1658ba852",
+  "files": [
+    {
+      "path": "data/processed/primary/222f122b5568774138ea/completion_masks.jsonl",
+      "bytes": 726573,
+      "sha256": "7adea7baac450e895d47c0baa6fdd8b01459f0266b2d8c0bf30bd1679b59bfcf"
+    },
+    {
+      "path": "data/processed/primary/222f122b5568774138ea/feature_records.jsonl",
+      "bytes": 1514792,
+      "sha256": "27639d46206bbb7941ceda18ff8c7317c4d56cf20fdb3ebba5083148834ea650"
+    },
+    {
+      "path": "data/processed/primary/222f122b5568774138ea/vocabulary.json",
+      "bytes": 71567,
+      "sha256": "8138cd406321743382451880fd805e5009f0c7058a651234d893fad8bf535cbd"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/paired_prediction_intervals.json",
+      "bytes": 10577,
+      "sha256": "58f469d3f076287eebd0154fad10a64127eee8313a62a3ab4ff4cba55e388b42"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed809/case_result.json",
+      "bytes": 990859,
+      "sha256": "5120c3244534e2672d5355087880434b9f60a382f4aaa77260be72942f75df48"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed809/frozen_test_arrays.npz",
+      "bytes": 885066,
+      "sha256": "ecd6809d472e5441bafbb46e4b3548dc6f22da21568919caf41dd9e73c8bf1dc"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed810/case_result.json",
+      "bytes": 990679,
+      "sha256": "fb0ac8d283d054c277e594c0c26fa7afde912ed8da30e6dc385a209a1bc1426f"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed810/frozen_test_arrays.npz",
+      "bytes": 883136,
+      "sha256": "f82a9b1172a88e3ca77af2976df9125bbe2679891ca3a00dc4ece7959d49a5e0"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed811/case_result.json",
+      "bytes": 991540,
+      "sha256": "90bef15e1561ecd8ed234d02fe4dc83743700c968c1c376f64b5ed08e11dcbf3"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed811/frozen_test_arrays.npz",
+      "bytes": 883195,
+      "sha256": "5a874668afb23b19885f65077ac290e505c6bde0711b15371e2592fa04f31744"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed812/case_result.json",
+      "bytes": 909204,
+      "sha256": "4a1cb7612e9d463fbfefef972b2cbc2a6380bb21634188011a51aa3b621233fe"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed812/frozen_test_arrays.npz",
+      "bytes": 825556,
+      "sha256": "d1d37db71bb68c164228b5fe532c02000d10df588831e7bc1f9534ca0735f170"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed813/case_result.json",
+      "bytes": 991117,
+      "sha256": "1db804eac5f628167686665fdf61532b3af3035af2495b08470cdaf77b4218b7"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/proposed_control_cases/seed813/frozen_test_arrays.npz",
+      "bytes": 885675,
+      "sha256": "411308b3afad98beb124c6d0a8e8456c80f21381cd58f38c8a7ca9dcebaa1d1a"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/run_result.json",
+      "bytes": 1267,
+      "sha256": "d5abd2798cc53be9c11fa7423fb03afe04a913575b083696f50080de6f940757"
+    },
+    {
+      "path": "outputs/steps/step06_frozen_test/88b9b4de3e1f7d877709/test_population.json",
+      "bytes": 14145,
+      "sha256": "eaa7797cd80a8a686d699c051a19b5865129d59a71de2fb1ae3e35a75ab2dbf7"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/main/figures/F1_primary_word_lookup.csv",
+      "bytes": 1091,
+      "sha256": "d31f3090d81fd266c8d961421b6c873f93a8a3ba705c4217a1a02283c9c87a0d"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/main/tables/T2_primary_competitors.csv",
+      "bytes": 3857,
+      "sha256": "aa1f2bd0ea2ab3f1dcc834b2bc2208eb16f65312b2eccc01a436e72ba085c59e"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/main/tables/T5_transport_text_examples.csv",
+      "bytes": 2639,
+      "sha256": "c4dbd815b8a7d79f2752429de15a36fe6283e7f0274ab8775c2fd7fd1a8a1ab5"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/divergence_per_document.csv",
+      "bytes": 275105,
+      "sha256": "d89da3b55889d47c62bd9ad6e52eb1fce2d1c7840decf0e45a448fc69816fe7d"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/divergence_per_seed.csv",
+      "bytes": 2784,
+      "sha256": "500ba7b406a19eef08d75491775452515fa40acf052ee203e13215aa25ed5d42"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed809/affinity_before_after.npz",
+      "bytes": 568142,
+      "sha256": "270d5b8dff5332d216413921d30b5bc16412aef85967a396b504e5d6bf8e5aa7"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed809/vocabulary.json",
+      "bytes": 20723,
+      "sha256": "af58dd7d61cd9399795ed1477842e1ad27614b8d9e841295b0e6e14b6723ca46"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed810/affinity_before_after.npz",
+      "bytes": 567174,
+      "sha256": "ac6c3fcac8bba5cc8f4582c7cf705f5b5b0475734e415971838f1b07d17db06c"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed810/vocabulary.json",
+      "bytes": 20723,
+      "sha256": "af58dd7d61cd9399795ed1477842e1ad27614b8d9e841295b0e6e14b6723ca46"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed811/affinity_before_after.npz",
+      "bytes": 567590,
+      "sha256": "036b9eedf810dfc6cd302c55487204c1c15f6f232536047a0b3eed8f23bdbd6b"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed811/vocabulary.json",
+      "bytes": 20723,
+      "sha256": "af58dd7d61cd9399795ed1477842e1ad27614b8d9e841295b0e6e14b6723ca46"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed812/affinity_before_after.npz",
+      "bytes": 568581,
+      "sha256": "5541d0b4a09a3a2249b3498e4b522ab527444d1f3b688c420075e52687049362"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed812/vocabulary.json",
+      "bytes": 20723,
+      "sha256": "af58dd7d61cd9399795ed1477842e1ad27614b8d9e841295b0e6e14b6723ca46"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed813/affinity_before_after.npz",
+      "bytes": 568395,
+      "sha256": "87f30bd703f0a2ad74b0d3ce19b202d266afcca953c37ce5f109681807d13e88"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary/seed813/vocabulary.json",
+      "bytes": 20723,
+      "sha256": "af58dd7d61cd9399795ed1477842e1ad27614b8d9e841295b0e6e14b6723ca46"
+    },
+    {
+      "path": "outputs/steps/step08_compact/171540c39f00cafba837/numerical_evidence/primary_fitting_targets.json",
+      "bytes": 10670,
+      "sha256": "3b6f9d2dd9250fa826f2cfccd32e3eab76b500a3b4f1879211c5feb1f317b3fb"
+    },
+    {
+      "path": "state/step01_accepted.json",
+      "bytes": 14131,
+      "sha256": "8d03d4a0ca72dee3c1668d6c8bf376b151e3b28c0459ef95fa52a90c35a30299"
+    },
+    {
+      "path": "state/step06_test_exposure.json",
+      "bytes": 28561,
+      "sha256": "e3c5adbcc7501cdd3a4921a55ae0cb5c12c4f7ff703f51c9b0bb9067c78b76a2"
+    }
+  ]
+}

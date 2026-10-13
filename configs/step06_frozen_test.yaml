@@ -1,0 +1,49 @@
+protocol: STEP06_FROZEN_PRIMARY_TEST_R1_20261010
+source_protocol: STEP05_NATIVE_DIVERSITY_RECOVERY_R2_20261010
+source_recovery_id: c6ada4213ad518e516658ce878f06f48dfcece04e6b193b37b8275dc3284183f
+source_index_sha256: 3fb5f839497e5a292d2cb9106a4582445d14a3a7152e0c3686900060227a6087
+preparation_id: 222f122b5568774138ea1f0d0a62f8dfe3d4c7094367790f3f955225f4807cb2
+seeds: [809, 810, 811, 812, 813]
+selected_configuration: signed_stable/range
+review_decision:
+  accept_observed_small_diversity_tradeoff_for_frozen_test: true
+  maximum_baseline_mean_td_gap: 0.006000000001
+  require_native_diversity_preserved_each_seed: true
+  require_complete_comparison_and_control_slots: true
+  require_best_mean_fitting_cv_npmi: true
+  require_best_mean_compatible_development_nll: true
+  require_original_global_selection_and_actual_readout_checks: true
+  strict_disjointness_seed812_na_remains_explicit: true
+  require_statistical_superiority_before_testing: false
+  change_original_step05_gates: false
+freeze:
+  refit_neural_models: false
+  reselect_graph_projection_profiles_seeds_or_rho: false
+  correction_in_proposed: false
+  allow_declared_classical_replay_on_fitting_only: true
+  require_saved_development_prediction_replay: true
+  prepare_classical_states_before_test_exposure: true
+  external_evaluation: false
+  allow_identical_restart_only_after_test_exposure: true
+inference:
+  require_original_device_and_versions: true
+  native_replay_atol: 0.000001
+  native_replay_rtol: 0.000001
+  classical_replay_atol: 0.0000000001
+  classical_replay_rtol: 0.000000001
+  lda_float32_replay_atol: 0.000001
+  lda_float32_replay_rtol: 0.000001
+  maximum_lda_development_macro_nll_drift: 0.00001
+  lda_posterior_inference_seed_offset: 660000
+  combinedtm_posterior_samples: 20
+  test_encoder_view: observed_text_only
+  zero_probability_target: explicit_failure_no_clipping
+reporting:
+  primary_contrast: Proposed_vs_native_NeuroMax_macro_source_test_nll
+  bootstrap_resamples: 10000
+  bootstrap_seed: 6809
+  intervals_are_unadjusted_descriptive: true
+  heldout_coherence: diagnostic_all_slots_no_filtering
+  fitting_coherence: descriptive_preserve_common_reference
+  automatic_cases: fitting_only_no_accuracy_or_human_interpretability_claim
+  archive_every_comparison_and_control_slot: true

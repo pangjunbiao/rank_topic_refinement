@@ -1,0 +1,54 @@
+# Local Python environments and editor state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Datasets, training caches, weights and result/exposure ledgers
+/data/raw/
+/data/primary/
+/data/external/
+/data/assets/
+/data/cache/
+/data/processed/
+/data/transportation_audit_v1/
+/state/
+/outputs/
+/logs/
+/reference_results/
+/run_history.txt
+/.repo_audit/
+/dist/
+/build/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+*.zip
+
+# Credentials and temporary files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+secrets.yaml
+*.tmp
+*.download
+Thumbs.db
+.DS_Store
+
+# Saved sensitivity inputs; distribute separately after data review
+/sensitivity_analysis/inputs/

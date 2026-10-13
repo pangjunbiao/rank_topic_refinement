@@ -1,0 +1,11 @@
+project:
+  name: rank_refinement
+  protocol_version: R1_STEP01_20261009
+  primary_historically_exposed: true
+  topics: 10
+  top_words: 10
+  pipeline_seeds: [809, 810, 811, 812, 813]
+  pilot_seeds: [809, 810]
+  external_mode: frozen_recipe_refit
+  final_proposed_base_count: 1
+  require_all_prior_gates: true

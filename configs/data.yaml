@@ -1,0 +1,48 @@
+primary:
+  input_dir: data/raw/primary
+  fallback_input_dir: data/primary
+  sources:
+    beijing: beijing*.csv
+    shanghai: shanghai*.csv
+    xiamen: xiamen*.csv
+  body_column: 正文
+  id_column: 序号
+  timestamp_column: 发布时间
+  encodings: [utf-8-sig, gb18030]
+  previous_split_path: data/raw/primary/previous_split.csv
+  split_seed: 20261009
+  split_ratios: {fit: 0.7, development: 0.1, test: 0.2}
+  internal_folds: 3
+  fold_seed: 20261010
+  near_duplicates:
+    enabled: true
+    threshold: 0.90
+    minimum_chars: 50
+    minimum_length_ratio: 0.90
+    shingle_size: 5
+  tokenizer:
+    implementation: jieba
+    version: 0.42.1
+    hmm: false
+    stopwords: stopwordsiso_zh_0.6.1
+    preserve_tokens: [不, 没, 没有, 未, 无, 不能, 无法, 不是, 不要, 别, 从不, 不再, 必须, 应该, 希望, 建议, 需要, 能否, 是否, 不便, 不足, 不满意, 不合理]
+    drop_pure_numbers: true
+    minimum_lexical_tokens: 1
+  phrases:
+    enabled: true
+    min_count: 5
+    threshold: 0.5
+    scoring: npmi
+    delimiter: _
+  vocabulary:
+    min_document_frequency: 5
+    max_document_fraction: 0.5
+  completion:
+    seed: 20261011
+    observed_fraction: 0.5
+    minimum_in_vocabulary_tokens: 2
+  quality_gates:
+    minimum_vocabulary: 100
+    minimum_pooled_coverage: 0.60
+    minimum_source_coverage: 0.40
+    minimum_heldout_completion_fraction: 0.90

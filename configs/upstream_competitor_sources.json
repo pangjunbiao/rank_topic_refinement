@@ -1,0 +1,58 @@
+[
+  {
+    "method": "glocom",
+    "repository": "qducnguyen/GloCOM",
+    "commit": "4094055b9e2d0169b0aa75d5aed7220e9509f0de",
+    "path": "models/GloCOM/GloCOM.py",
+    "sha256": "663b4078fbd730f26f045d134bf1dea518ce7a564f01459efa22bde695df87f4",
+    "bytes": 7467
+  },
+  {
+    "method": "glocom",
+    "repository": "qducnguyen/GloCOM",
+    "commit": "4094055b9e2d0169b0aa75d5aed7220e9509f0de",
+    "path": "models/GloCOM/ECR.py",
+    "sha256": "d8e6240f1df932c636167eaf9c627e6cd243f2339758a5e9b34261917eac1259",
+    "bytes": 1577
+  },
+  {
+    "method": "fastopic",
+    "repository": "BobXWu/FASTopic",
+    "commit": "51150f1ac22c4599ab0e390b14c031a98cffed68",
+    "path": "fastopic/_fastopic.py",
+    "sha256": "7100581db9ef802e4bcf6520a66681920cd7110693bc91bf96a55025ca9e31d2",
+    "bytes": 4457
+  },
+  {
+    "method": "fastopic",
+    "repository": "BobXWu/FASTopic",
+    "commit": "51150f1ac22c4599ab0e390b14c031a98cffed68",
+    "path": "fastopic/_ETP.py",
+    "sha256": "4663f18fe1f32b93df2cad9e4633ea0b6f217fe46f728862238348a08ff7c233",
+    "bytes": 4585
+  },
+  {
+    "method": "fastopic",
+    "repository": "BobXWu/FASTopic",
+    "commit": "51150f1ac22c4599ab0e390b14c031a98cffed68",
+    "path": "fastopic/_model_utils.py",
+    "sha256": "dafd02ddbc657f030ee2dbbf037063e8b4af8139e6c4bc1945c947583cdee75e",
+    "bytes": 177
+  },
+  {
+    "method": "combinedtm",
+    "repository": "MilaNLProc/contextualized-topic-models",
+    "commit": "20027212765f3c55b84eff4497dd076c3b1afadf",
+    "path": "contextualized_topic_models/networks/decoding_network.py",
+    "sha256": "af36ed1c5805dc1c1fab22b55d4b12070ecb3a92a14a34d6e8c5fcecab745f2e",
+    "bytes": 6901
+  },
+  {
+    "method": "combinedtm",
+    "repository": "MilaNLProc/contextualized-topic-models",
+    "commit": "20027212765f3c55b84eff4497dd076c3b1afadf",
+    "path": "contextualized_topic_models/networks/inference_network.py",
+    "sha256": "7598fbfb7bd6b6308422bd14815183319795a10ceb57619326e0c0a8ae00c311",
+    "bytes": 5211
+  }
+]

@@ -1,0 +1,9 @@
+moment_statistics: fitting_contexts_only
+recompute_for_each_deployed_affinity: true
+shared_fitting_unigram_prior: true
+backoff_selection: development_only_common_bounded_policy
+rho_grid_status: freeze_before_step03_scoring
+range_secondary_min_mean_nll_gain: 0.001
+range_secondary_must_improve_both_pilot_seeds: true
+pilot_max_nll_damage: 0.01
+damage_limit_is_not_a_winning_claim: true

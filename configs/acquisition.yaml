@@ -1,0 +1,53 @@
+pilot:
+  word_group_support: [10, 20]
+  pair_group_support: [3, 5, 10]
+  gamma: [0.0, 0.5]
+  eta: 0.25
+  settings: 12
+  folds: 3
+  subsamples: 20
+  group_fraction: 0.8
+  empirical_quantile: 0.1
+  window: 10
+  max_accepted_swaps_per_core: 10
+  core_objective: signed_all_pairs_plus_internal_graph_strength
+  core_search: global_signed_candidate_packing
+  partition: r1_diagnostic_control_only
+  global_core_search:
+    diversity_draws: 128
+    word_subset_fractions: [0.35, 0.5, 0.7, 0.9]
+    repair_drop_counts: [1, 2]
+    solver_time_limit_seconds: 10.0
+    diagnostic_time_limit_seconds: 5.0
+    solver_node_limit: 10000
+  minimum_words_per_community: 10
+  minimum_supported_nodes: 100
+  partition_restarts: 5
+  partition_max_iterations: 100
+  every_core_positive_signed_cohesion: true
+  selection: qualifying_npmi_then_cv_then_coverage_then_index
+  association_epsilon: 0.000000000001
+  zero_marginal_signed_score: -1.0
+  ubiquitous_joint_signed_score: 0.0
+  quantile_method: linear
+  signed_pair_support_policy: all_measured_pairs_including_zero_support
+  early_stop: skip_anchor_assets_and_training_if_no_setting_passes_all_six_structural_checks
+controls:
+  r1_partition_diagnostic:
+    word_min: 10
+    pair_min: 3
+    gamma: 0.0
+    eta: 0.25
+    provenance: fixed_R1_least_restrictive_stable_partition_search_not_a_selection_candidate
+  original_document_positive:
+    word_min: 20
+    pair_min: 3
+    gamma: 0.0
+    eta: 0.5
+    provenance: recovered_attempt03_acquisition_not_retuned
+  no_stability_diagnostic:
+    word_min: 10
+    pair_min: 3
+    gamma: 0.0
+    eta: 0.25
+    provenance: fixed_least_restrictive_grid_setting_not_a_selection_candidate

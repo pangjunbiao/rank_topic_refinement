@@ -1,0 +1,3 @@
+# One command for all existing stages and external replication.
+# Reuses the installed CUDA PyTorch; it does not install a CPU Torch wheel.
+-r requirements-step06.txt

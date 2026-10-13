@@ -1,0 +1,28 @@
+protocol: STEP05_NATIVE_DIVERSITY_RECOVERY_R2_20261010
+source_protocol: STEP05_FROZEN_FIVE_SEED_REPLICATION_R1_20261010
+scope: exploratory_five_seed_development_recovery_and_completion
+seeds: [809, 810, 811, 812, 813]
+base: neuromax
+profile: random_words
+recovery_graphs: [signed_stable, signed_full]
+projection_candidates: [primary, range]
+selection: one_global_complete_grid_mean_development_nll
+per_seed_method_selection: false
+moment_correction: false
+diversity_contract: preserve_native_top10_union
+promoted_cores_disjoint: true
+frozen_model_retraining: false
+recovery_new_neural_fits: 0
+recovery_new_encoder_calls: 0
+maximum_new_completion_baseline_fits: 30
+acceptance:
+  minimum_mean_native_nll_gain: 0.001
+  fitting_cv_and_npmi_improve_over_native: true
+  preserve_native_diversity_every_seed: true
+  maximum_relative_l1_movement: 0.05
+  all_five_seeds_required: true
+controls: [native, proposed, primary_control, range_control, index_control, l2_control, moment_control, no_backoff, display_only, alternate_calibration, positive_only_association, strict_word_disjointness]
+complete_competitors_after_recovery_gate: true
+test_evaluation: false
+external_evaluation: false
+final_paper_results: false

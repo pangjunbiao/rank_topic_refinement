@@ -1,0 +1,66 @@
+protocol: STEP03_NEURAL_PREDICTIVE_R1_20261009
+scope: bounded_development_pilot
+topics: 10
+topn: 10
+seeds: [809, 810]
+profiles: [random_words, chinese_words]
+bases: [encot, neuromax]
+maximum_native_fits: 8
+select_final_base_count: 1
+batch_size: 200
+learning_rate: 0.002
+checkpoint_every_epochs: 25
+sinkhorn_max_iter: 5000
+training:
+  encot:
+    epochs: 200
+    en_units: 200
+    dropout: 0.0
+    beta_temp: 0.2
+    weight_loss_ECR: 60.0
+    sinkhorn_alpha: 20.0
+    alpha_noise: 0.001
+    alpha_augment: 0.05
+    num_clusters: 50
+    weight_ot_doc_cluster: 1.0
+    weight_ot_topic_cluster: 1.0
+  neuromax:
+    epochs: 500
+    en_units: 200
+    dropout: 0.2
+    beta_temp: 0.2
+    num_groups: 4
+    weight_loss_ECR: 40.0
+    weight_loss_GR: 1.0
+    alpha_GR: 5.0
+    alpha_ECR: 20.0
+    weight_loss_InfoNCE: 50.0
+    scheduler_step: 125
+    scheduler_gamma: 0.5
+global_context:
+  clusters: 50
+  random_state: 809
+  n_init: 10
+  aggregation: sum_fitting_counts
+  heldout_assignment: observed_text_to_fixed_fitting_centers
+projection_pilot:
+  context_count: 64
+  context_seed: 809
+  secondary_seconds: 180.0
+  tv_cap_slack_scaled: 0.00001
+  qp_seconds: 180.0
+  qp_eps: 0.000000001
+  moment_std_floor: 0.000001
+  backoff_grid: [0.0, 0.01, 0.05, 0.1, 0.2]
+  unigram_pseudocount: 0.5
+  maximum_development_nll_damage: 0.01
+  secondary_minimum_mean_nll_improvement: 0.001
+selection:
+  require_both_seeds: true
+  require_finite_full_descriptor_reference: true
+  require_cv_and_npmi_gain: true
+  require_no_topic_diversity_loss: true
+  ordering: [macro_source_nll_ascending, c_npmi_descending, c_v_descending]
+test_evaluation: false
+external_evaluation: false
+final_paper_results: false

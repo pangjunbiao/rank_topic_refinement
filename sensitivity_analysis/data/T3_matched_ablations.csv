@@ -1,0 +1,10 @@
+﻿panel,variant,cv,npmi,td,nll
+A: components,Proposed,0.5935 ± 0.0551,0.0619 ± 0.0308,0.9940 ± 0.0089,6.097050 ± 0.004245
+A: components,Without acquisition/projection (native parent),0.4898 ± 0.0324,-0.0482 ± 0.0330,0.9940 ± 0.0089,6.097601 ± 0.004045
+A: components,Without association stability discount (signed full graph),0.5977 ± 0.0415,0.0669 ± 0.0277,0.9940 ± 0.0089,6.098014 ± 0.005249
+A: components,Without signed negative associations,0.5449 ± 0.0400,0.0122 ± 0.0310,0.9960 ± 0.0055,6.098281 ± 0.004229
+B: projection,Proposed (prediction-aware range secondary),0.5935 ± 0.0551,0.0619 ± 0.0308,0.9940 ± 0.0089,6.097050 ± 0.004245
+B: projection,Primary minimum-TV only,0.5935 ± 0.0551,0.0619 ± 0.0308,0.9940 ± 0.0089,6.097743 ± 0.004019
+B: projection,Index secondary,0.5935 ± 0.0551,0.0619 ± 0.0308,0.9940 ± 0.0089,6.097562 ± 0.004287
+B: projection,L2 projection,0.5935 ± 0.0551,0.0619 ± 0.0308,0.9940 ± 0.0089,6.097313 ± 0.004130
+B: projection,Same-core display only,0.5935 ± 0.0551,0.0619 ± 0.0308,0.9940 ± 0.0089,6.097601 ± 0.004045

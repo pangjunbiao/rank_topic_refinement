@@ -1,0 +1,8 @@
+acquisition: reuse_all_twelve_pilot_settings
+rank_margin_multipliers: [0.25, 0.5, 1.0, 2.0]
+rank_margin_seeds: [809, 810]
+rank_margin_reference: development_only
+group_deletion_repetitions: 5
+group_deletion_fraction: 0.1
+group_deletion_seed: 20261013
+no_hyperparameter_reselection: true

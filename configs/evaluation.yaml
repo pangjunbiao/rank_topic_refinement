@@ -1,0 +1,21 @@
+coherence:
+  implementation: gensim
+  version: 4.4.0
+  topn: 10
+  cv_window: 110
+  npmi_window: 10
+  processes: 1
+  absent_reference_word_policy: standard_implementation_keep_all_slots
+  nonfinite_policy: explicit_unscorable
+  oracle_tolerance: 1.0e-10
+prediction:
+  primary: macro_source_completion_nll
+  secondary: micro_completion_nll
+  log_base: natural
+  inference_view: observed_tokens_only
+  bootstrap_draws: 1000
+  bootstrap_seed: 20261012
+variability:
+  scope: full_stochastic_pipeline_fixed_corpus_and_split
+  standard_deviation: sample
+  allow_zero_descriptor_sd: true

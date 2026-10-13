@@ -1,0 +1,32 @@
+{
+  "g_41157171d7229462256158a3": {
+    "candidate_theme": "Route provision announcement",
+    "english_excerpt": "The Haicang branch of Xiamen Public Transport Group has launched route 847, a limited-stop express service from Xinggang Garden to Wuyuan Bay West Bus Terminal. The route uses five King Long XMQ6891G1 buses and one XMQ6105G4 bus.",
+    "original_excerpt_sha256": "22a94664d289fc6a39d7946e3d8ce5ea56e247567ba98dce250bdbf2f8fcbc0b"
+  },
+  "g_1855433ac0bc431483015187": {
+    "candidate_theme": "Waiting time and boarding difficulty",
+    "english_excerpt": "Living in Tongzhou is so difficult. There are no buses on route 668 around the end of the workday. After a full day at work, we still have to wait at least twenty minutes at the stop to get home. At Bawangfen, there are so many people that even three or four buses are not enough for everyone to board. I cannot imagine how cold it will be in winter. The government encourages public transport, but how can we use it in this situation? Can any department help? Beijing Public Transport Group; Transport Beijing.",
+    "original_excerpt_sha256": "6d39157e7f0a5087ebcc9c4fab970e37be4e9a2f7aca473c9b3e11d5cc1f4f11"
+  },
+  "g_aa97e830f5aab7f799ec2b5a": {
+    "candidate_theme": "Cabin ventilation and air conditioning",
+    "english_excerpt": "... Except at midday, opening the windows is very comfortable in this weather. The buses either do not turn on the air conditioning or switch it off after a short time. The whole compartment is stuffy, and we are not allowed to open the windows. It is really uncomfortable. Please either keep the air conditioning on or let us open the windows. Please. ...",
+    "original_excerpt_sha256": "52a89a20dc2ad19f80e013a8f7a4595ed76aec38e66d2a797ef0c23ac1b003b0"
+  },
+  "g_7e041a663344e7200f3ef4fa": {
+    "candidate_theme": "Crowding information and payment service announcement",
+    "english_excerpt": "The Beijing Bus app will add a crowding-information feature within the year. In future, Beijing public transport will use facial recognition to obtain passenger information. For QR-code boarding, the Beijing Bus app launched on 1 September. More than 500,000 passenger trips are paid for by QR code each day. Passengers will no longer have to wait until a bus reaches the stop to find out whether it is crowded; the feature is expected to be added within the year ...",
+    "original_excerpt_sha256": "27d42bc01ee417a74219786c8ea8841ce4400689baabc904eec37b151a487c27"
+  },
+  "g_423cb979a9f2f7c925d0c404": {
+    "candidate_theme": "Route changes announcement",
+    "english_excerpt": "Four bus routes will be launched or adjusted from 10 October to coincide with newly opened roads in Mentougou District, including Jin'an Road, Xincheng Avenue and Hegezhuang Middle Street. To make travel easier for residents, Beijing Public Transport Group plans to launch or adjust four routes from the first service on 10 October 2019, and add intermediate stops on four routes. The plan will use Jin'an Road to provide new connections between central Beijing and Mentougou ...",
+    "original_excerpt_sha256": "f14d2d17a736e2b4af13e13eab693038edb75b579f78aebdf4d06bb4cfbc6b7b"
+  },
+  "g_ad3c035c4a478076625595db": {
+    "candidate_theme": "Payment dispute and driver safety news",
+    "english_excerpt": "A male passenger on a Xiamen bus argued with a female driver over a card-payment issue. The conflict escalated into a physical confrontation. As he attempted to leave the bus, the driver held him back, after which he beat her. Police have intervened. The driver's left temporal bone was fractured, and she is receiving hospital treatment. ...",
+    "original_excerpt_sha256": "b34e5e0cee46300c73b439926b21f1564828ce280b361f1adc674864a45a7f07"
+  }
+}

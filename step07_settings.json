@@ -1,0 +1,14 @@
+{
+  "protocol": "STEP07_EXTERNAL_TRANSIT_RECIPE_REFIT_R1_20261010",
+  "dataset": "data/raw/external/Transit Tweet Data.csv",
+  "dataset_sha256": "3e386a2d6e0ba4023559992415880687326a43c86a7be36d226d960e1a39ec9d",
+  "source": "https://github.com/etujnr/Transit-Tweet-Data",
+  "paper": "https://doi.org/10.32866/001c.140966",
+  "external_mode": "frozen_recipe_refit",
+  "language": "English",
+  "seeds": [809, 810, 811, 812, 813],
+  "model_selection_on_external_test": false,
+  "labels_used": false,
+  "main_method": "signed_stable/range, NeuroMax parent, no moment correction",
+  "note": "Settings are fixed by the reviewed protocol. This JSON is provenance, not a tuning interface."
+}

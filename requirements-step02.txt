@@ -1,0 +1,5 @@
+# Adds only the CPU graph/assignment dependencies. Keeps your CUDA PyTorch.
+-r requirements.txt
+scikit-learn==1.5.2
+joblib==1.4.2
+threadpoolctl==3.6.0

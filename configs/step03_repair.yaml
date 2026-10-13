@@ -1,0 +1,16 @@
+protocol: STEP03_SAVED_REPLAY_R1_20261009
+source_protocol: STEP03_NEURAL_PREDICTIVE_R1_20261009
+new_model_fits: 0
+new_encoder_calls: 0
+change_vocabulary_masks_or_targets: false
+primary_seconds: 180.0
+index_seconds: 180.0
+range_seconds: 180.0
+range_maximum_iterations: 50
+range_full_constraint_tolerance: 0.00000001
+solver: displacement_highs_ipm_with_exact_range_separation
+range_adoption: both_seeds_gain_and_mean_gain_at_least_0_001_otherwise_keep_index
+preserve_original_development_coherence_gate: true
+fitting_coherence_claim: descriptive_in_sample_only
+allow_step4_with_missing_development_coherence: false
+report_failed_or_abstaining_proposed_separately: true

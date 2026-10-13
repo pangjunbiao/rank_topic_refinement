@@ -1,0 +1,2 @@
+# Report assembly uses the working environment; no PyTorch replacement.
+-r requirements-step07.txt

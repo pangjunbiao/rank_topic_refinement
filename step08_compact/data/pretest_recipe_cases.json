@@ -1,0 +1,216 @@
+{
+  "scope": "PRETEST_DEVELOPMENT_FOUR_RECIPE_DIAGNOSTIC",
+  "source_relative_path": "outputs/steps/step05_recovery/c6ada4213ad518e51665/recovery_candidate_rows.json",
+  "source_sha256": "514ac2ce05f48431fced56ea3d1bee1905312c9b3e469da0dd21e5a63bf3ad15",
+  "rank_margin_scaled": 1e-06,
+  "test_used": false,
+  "seeds": [
+    809,
+    810,
+    811,
+    812,
+    813
+  ],
+  "rows": [
+    {
+      "seed": 809,
+      "graph": "signed_stable",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.596722067089649,
+      "fit_npmi": 0.06019631448878132,
+      "development_nll": 6.028956382643094,
+      "relative_l1_movement": 0.0003135202384829814
+    },
+    {
+      "seed": 809,
+      "graph": "signed_stable",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.5967220670896491,
+      "fit_npmi": 0.06019631448878132,
+      "development_nll": 6.029288052379619,
+      "relative_l1_movement": 0.0003135228750875572
+    },
+    {
+      "seed": 809,
+      "graph": "signed_full",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.6016608107080393,
+      "fit_npmi": 0.06372329347441771,
+      "development_nll": 6.028935510119709,
+      "relative_l1_movement": 0.00031825838256989425
+    },
+    {
+      "seed": 809,
+      "graph": "signed_full",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.6016608107080393,
+      "fit_npmi": 0.06372329347441771,
+      "development_nll": 6.029307881848861,
+      "relative_l1_movement": 0.0003182610191744707
+    },
+    {
+      "seed": 810,
+      "graph": "signed_stable",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.6654909958851575,
+      "fit_npmi": 0.09043393298497657,
+      "development_nll": 6.0363355691483305,
+      "relative_l1_movement": 0.00042154942784201167
+    },
+    {
+      "seed": 810,
+      "graph": "signed_stable",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.6654909958851574,
+      "fit_npmi": 0.09043393298497657,
+      "development_nll": 6.036571008382045,
+      "relative_l1_movement": 0.00042155231980066816
+    },
+    {
+      "seed": 810,
+      "graph": "signed_full",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.6577212354954394,
+      "fit_npmi": 0.09890959354484823,
+      "development_nll": 6.039598805916441,
+      "relative_l1_movement": 0.0005772595038370909
+    },
+    {
+      "seed": 810,
+      "graph": "signed_full",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.6577212354954394,
+      "fit_npmi": 0.09890959354484823,
+      "development_nll": 6.03685662248424,
+      "relative_l1_movement": 0.000577262395795747
+    },
+    {
+      "seed": 811,
+      "graph": "signed_stable",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.5246082815327847,
+      "fit_npmi": 0.036654110776351424,
+      "development_nll": 6.021394559670738,
+      "relative_l1_movement": 0.00029376247214400145
+    },
+    {
+      "seed": 811,
+      "graph": "signed_stable",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.5246082815327848,
+      "fit_npmi": 0.03665411077635141,
+      "development_nll": 6.020693308925268,
+      "relative_l1_movement": 0.0002937651473618223
+    },
+    {
+      "seed": 811,
+      "graph": "signed_full",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.5519537969170807,
+      "fit_npmi": 0.042989576649240725,
+      "development_nll": 6.020342865106336,
+      "relative_l1_movement": 0.00028602745348138504
+    },
+    {
+      "seed": 811,
+      "graph": "signed_full",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.5519537969170807,
+      "fit_npmi": 0.042989576649240725,
+      "development_nll": 6.020443347182994,
+      "relative_l1_movement": 0.0002860301286992122
+    },
+    {
+      "seed": 812,
+      "graph": "signed_stable",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.6233166827786908,
+      "fit_npmi": 0.09528028245562614,
+      "development_nll": 6.026205445428837,
+      "relative_l1_movement": 0.0003632385482437031
+    },
+    {
+      "seed": 812,
+      "graph": "signed_stable",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.6233166827786908,
+      "fit_npmi": 0.09528028245562614,
+      "development_nll": 6.026493213664292,
+      "relative_l1_movement": 0.0003632411253114599
+    },
+    {
+      "seed": 812,
+      "graph": "signed_full",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.6110152307794602,
+      "fit_npmi": 0.09159589243376767,
+      "development_nll": 6.0272258448648195,
+      "relative_l1_movement": 0.00033956166140722293
+    },
+    {
+      "seed": 812,
+      "graph": "signed_full",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.6110152307794602,
+      "fit_npmi": 0.09159589243376767,
+      "development_nll": 6.026994947107031,
+      "relative_l1_movement": 0.00033956423847498573
+    },
+    {
+      "seed": 813,
+      "graph": "signed_stable",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.5571204473983079,
+      "fit_npmi": 0.026990712812670337,
+      "development_nll": 6.026953566033729,
+      "relative_l1_movement": 0.0003369902954292054
+    },
+    {
+      "seed": 813,
+      "graph": "signed_stable",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.5571204473983079,
+      "fit_npmi": 0.026990712812670337,
+      "development_nll": 6.026106852148042,
+      "relative_l1_movement": 0.0003369928816470041
+    },
+    {
+      "seed": 813,
+      "graph": "signed_full",
+      "projection": "primary",
+      "status": "scored",
+      "fit_c_v": 0.5661839881822298,
+      "fit_npmi": 0.037516783446593996,
+      "development_nll": 6.027140763079319,
+      "relative_l1_movement": 0.0004023109435823991
+    },
+    {
+      "seed": 813,
+      "graph": "signed_full",
+      "projection": "range",
+      "status": "scored",
+      "fit_c_v": 0.5661839881822298,
+      "fit_npmi": 0.037516783446594,
+      "development_nll": 6.027143128859435,
+      "relative_l1_movement": 0.00040231352980019754
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Same verified environment; preserve the existing CUDA PyTorch 2.7 build.
+-r requirements-step04.txt

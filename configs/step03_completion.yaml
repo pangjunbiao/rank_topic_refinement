@@ -1,0 +1,44 @@
+protocol: STEP03_COMPLETION_R2_20261009
+source_protocol: STEP03_SAVED_REPLAY_R1_20261009
+canonical_projection: primary_minimum_tv
+moment_correction: false
+secondary_objectives_are_controls: true
+new_neural_fits: 0
+new_encoder_calls: 0
+coherence:
+  common_reference: accepted_fitting_groups
+  claim: in_sample_descriptive_only
+  development_reference: retain_full_reference_and_na_diagnostics
+  c_v_window: 110
+  c_npmi_window: 10
+  topics: 10
+  words_per_topic: 10
+prediction:
+  reference: accepted_development_completion_masks
+  sources_equal_weight: true
+  shared_backoff_grid: [0.0, 0.01, 0.05, 0.1, 0.2]
+  unigram_pseudocount: 0.5
+  clip_probabilities: false
+  baseline_profile_selection: equal_seed_mean_macro_nll
+classical_panel:
+  methods: [lda, nmf]
+  seeds: [809, 810]
+  maximum_new_fits: 8
+  profiles:
+    lda:
+      - {name: library_default_k10, alpha: symmetric, eta: null, passes: 1, iterations: 50}
+      - {name: fitting_strong_k10, alpha: auto, eta: auto, passes: 20, iterations: 100}
+    nmf:
+      - {name: sklearn_default_tfidf_k10, input: tfidf, init: nndsvda, solver: cd, beta_loss: frobenius, max_iter: 200, tol: 0.0001}
+      - {name: fitting_strong_k10, input: tfidf, init: nndsvda, solver: cd, beta_loss: frobenius, max_iter: 400, tol: 0.0001}
+selection:
+  one_base_profile_for_followup: true
+  improve_fitting_cv_and_npmi_both_seeds: true
+  diversity_loss_allowed: false
+  improve_matched_native_nll_both_seeds: true
+  mean_matched_native_nll_gain_minimum: 0.001
+  ranking: equal_seed_mean_macro_source_nll_then_base_then_profile
+  no_missing_seed_averages: true
+  final_test_or_external_selection: false
+benchmark_scope: bounded_classical_and_two_native_neural_families
+full_final_competitor_benchmark_completed: false

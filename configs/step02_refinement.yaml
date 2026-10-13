@@ -1,0 +1,41 @@
+protocol: R3_NATIVE_TOP10_DIVERSITY_20261009
+scope: exploratory_readout_mechanism_pilot
+representations: [accepted_phrases, unigrams]
+bases: [lda, nmf]
+folds: [1, 2, 3]
+seeds: [809, 810]
+topics: 10
+topn: 10
+profiles:
+  lda: {alpha: auto, eta: auto, passes: 20, iterations: 100}
+  nmf: {input: tfidf, init: nndsvda, solver: cd, beta_loss: frobenius, max_iter: 400, tol: 0.0001}
+acquisition:
+  window: 10
+  neighborhood: 50
+  word_group_support: 20
+  pair_group_support: 5
+  subsamples: 20
+  source_stratified_fraction: 0.5
+  minimum_mean_pair_npmi: 0.1
+  minimum_expected_top10_gain: 0.02
+  pair_words_disjoint: true
+  preserve_global_top10_diversity: true
+  allocation_seconds: 5.0
+  allocation_nodes: 10000
+projection:
+  rank_margin_scaled: 0.000001
+  seconds: 30.0
+  certificate_tolerance_scaled: 0.0000001
+  primary_objective_tolerance_scaled: 0.00001
+  max_relative_l1_movement: 0.05
+  numerical_retry: same_lp_ipm_only_for_tiny_negative_affinity
+acceptance:
+  fitting_cv_gain: 0.0
+  fitting_npmi_gain: 0.0
+  allow_diversity_loss: false
+  validation_used_for_case_acceptance: false
+  complete_reference_required_for_benchmark: true
+  all_cases_retained: true
+  minimum_matched_finite_cases_for_promising_profile: 4
+prediction_evaluated: false
+external_data_used: false

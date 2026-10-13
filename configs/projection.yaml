@@ -1,0 +1,11 @@
+primary: minimum_affinity_tv
+conserve_rows: true
+conserve_columns: true
+secondary: fitting_context_logit_range
+contexts: 64
+index_secondary_control: true
+l2_control:
+  original_feasible_set: true
+  tv_face_cap: false
+numeric_constants_status: resolve_from_verified_native_scale_before_step03_scoring
+no_post_solve_clipping: true

@@ -1,0 +1,10 @@
+-r requirements-step02.txt
+# Keep the already-working CUDA PyTorch installation. This file never replaces it.
+geomloss==0.2.6
+torch-kmeans==0.2.0
+osqp==1.0.4
+sentence-transformers==3.4.1
+transformers==4.51.3
+tokenizers==0.21.1
+huggingface-hub==0.30.2
+safetensors==0.5.3

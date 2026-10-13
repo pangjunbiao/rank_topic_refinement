@@ -1,0 +1,98 @@
+{
+  "方式": {
+    "label": "Mode",
+    "note": "way or mode"
+  },
+  "上车": {
+    "label": "Boarding",
+    "note": "board a vehicle"
+  },
+  "话": {
+    "label": "Words",
+    "note": "words or speech; context-dependent"
+  },
+  "方便": {
+    "label": "Convenient",
+    "note": "convenient"
+  },
+  "运营": {
+    "label": "Operation",
+    "note": "operation"
+  },
+  "路": {
+    "label": "Road",
+    "note": "road or way; context-dependent"
+  },
+  "没有": {
+    "label": "No / absent",
+    "note": "not have or there is no; negation"
+  },
+  "没": {
+    "label": "Not / none",
+    "note": "not or none; negation"
+  },
+  "安全": {
+    "label": "Safety",
+    "note": "safety"
+  },
+  "北京公交_集团": {
+    "label": "Beijing bus group",
+    "note": "Beijing Public Transport Group; original phrase token"
+  },
+  "出行": {
+    "label": "Travel",
+    "note": "travel or getting around"
+  },
+  "身边_事": {
+    "label": "Local matters",
+    "note": "things happening around us; original phrase token"
+  },
+  "撞": {
+    "label": "Collision",
+    "note": "hit or collide; context-dependent"
+  },
+  "开_空调": {
+    "label": "Turn on AC",
+    "note": "turn on air conditioning; original phrase token"
+  },
+  "支付宝": {
+    "label": "Alipay",
+    "note": "Alipay"
+  },
+  "车": {
+    "label": "Vehicle",
+    "note": "vehicle"
+  },
+  "卡": {
+    "label": "Card",
+    "note": "card; context-dependent"
+  },
+  "投诉": {
+    "label": "Complaint",
+    "note": "complaint"
+  },
+  "刷卡机": {
+    "label": "Card reader",
+    "note": "card reader"
+  },
+  "翻": {
+    "label": "Turn / flip",
+    "note": "turn over or flip; context-dependent"
+  },
+  "申_哥": {
+    "label": "Shen-ge",
+    "note": "literal transliteration of the original phrase token; referent unverified"
+  },
+  "提出_问题": {
+    "label": "Raise a question",
+    "note": "raise a question or problem; original phrase token"
+  },
+  "不": {
+    "label": "Not",
+    "note": "not; negation"
+  },
+  "车厢": {
+    "label": "Compartment",
+    "note": "vehicle compartment"
+  }
+}
